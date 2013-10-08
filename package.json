@@ -17,5 +17,10 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/glitxt/glitxt/issues"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "jshint": "*",
+    "jsdox": "*"
   }
 }
