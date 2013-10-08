@@ -2,13 +2,16 @@
 # glitxt Makefile
 ###
 
-test:
-	@echo "Test"
-
 hint:
-	@echo "Hint"
+	@node node_modules/.bin/jshint lib/
+
+test: hint
+	@node node_modules/.bin/mocha --reporter spec
 
 docs:
-	@echo "docs"
+	@node node_modules/.bin/jsdox --reporter spec
 
-.PHONY: test hint docs
+report:
+	@node node_modules/.bin/plato -t "glitxt" -r --dir report lib/
+
+.PHONY: hint test docs report
