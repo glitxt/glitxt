@@ -1,5 +1,19 @@
 ###
+# General Files
+###
+
+.DS_Store
+
+
+###
 # Node Modules
 ###
 
 node_modules/
+
+
+###
+# Docs/Report
+###
+
+report/
