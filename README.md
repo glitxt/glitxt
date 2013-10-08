@@ -1,4 +1,3 @@
 glitxt
-======
 
-core functions
+core functions like glitch.js...
