@@ -9,7 +9,7 @@ test: hint
 	@node node_modules/.bin/mocha --reporter spec
 
 docs:
-	@node node_modules/.bin/jsdox --reporter spec
+	@node node_modules/.bin/jsdox --output docs lib
 
 report:
 	@node node_modules/.bin/plato -t "glitxt" -r --dir report lib/
