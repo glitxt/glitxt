@@ -1,28 +1,16 @@
 var assert = require('assert');
-var glitxt = require('./../lib/index');
+var fs = require('fs');
+var Glitcher = require('./../lib/index');
+
+var testBuffer = fs.readFileSync(__dirname+'/files/test.gif');
+var testMessage = 'hello-world';
 
 describe('lib/index.js', function() {
 
-
-  describe('#encode', function() {
-
-	});
-
-
-  describe('#decode', function() {
-
-  	it('should return the .', function() {
-    	glitxt.decode.file('/files/hello-world.gif', function(data) {
-    		assert.equal( 'test', data );
-      });
-    });
-
-    it('should return the .', function() {
-    	glitxt.decode.url('https://dl.dropboxusercontent.com/u/2874680/glitxt/generated_gifs/1380399254693.gif', function(data) {
-    		assert.equal( 'test', data );
-      });
-    });
-
+  it('encode a message and decode it back.', function() {
+    var encoded = Glitcher.encode(testBuffer, testMessage);
+    var result = Glitcher.decode(encoded);
+    assert.equal(testMessage, result);
   });
 
 });
