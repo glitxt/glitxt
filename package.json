@@ -19,7 +19,7 @@
     "url": "https://github.com/glitxt/glitxt/issues"
   },
   "dependencies": {
-    "request": "2.27.0"
+    
   },
   "devDependencies": {
     "mocha": "1.13.0",
