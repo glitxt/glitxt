@@ -2,16 +2,19 @@
 # glitxt Makefile
 ###
 
-hint:
-	@node node_modules/.bin/jshint lib/
 
-test: hint
-	@node node_modules/.bin/mocha --reporter spec
+COMMON_MAKEFILES_PATH=node_modules/CommonMakefiles
+include $(COMMON_MAKEFILES_PATH)/index.make
+include $(COMMON_MAKEFILES_PATH)/node/all.make
 
+
+###
+# Tasks
+###
 docs:
 	@node node_modules/.bin/jsdox --output docs lib
 
 report:
 	@node node_modules/.bin/plato -t "glitxt" -r --dir report lib/
 
-.PHONY: hint test docs report
+.PHONY: test docs report
