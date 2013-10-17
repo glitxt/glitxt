@@ -1,6 +1,6 @@
 {
   "name": "glitxt",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "glitxt core functions",
   "main": "lib/index.js",
   "scripts": {
