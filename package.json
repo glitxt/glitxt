@@ -22,7 +22,7 @@
     
   },
   "devDependencies": {
-    "CommonMakefiles": "https://github.com/wrongentertainment/CommonMakefiles/tarball/master",
+    "CommonMakefiles": "https://github.com/subtub/CommonMakefiles/tarball/master",
     "mocha": "1.13.0",
     "jshint": "2.1.11",
     "jsdox": "0.2.2",
