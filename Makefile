@@ -3,14 +3,14 @@
 ###
 
 
-COMMON_MAKEFILES_PATH=node_modules/CommonMakefiles
-include $(COMMON_MAKEFILES_PATH)/index.make
-include $(COMMON_MAKEFILES_PATH)/node/all.make
+include node_modules/CommonMakefiles/node.make
 
 
 ###
 # Tasks
 ###
+test: mocha
+
 docs:
 	@node node_modules/.bin/jsdox --output docs lib
 
