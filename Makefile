@@ -3,7 +3,7 @@
 ###
 
 
-include node_modules/CommonMakefiles/node.make
+include node_modules/common-makefiles/node.make
 
 
 ###

@@ -22,7 +22,7 @@
     
   },
   "devDependencies": {
-    "CommonMakefiles": "https://github.com/subtub/CommonMakefiles/archive/v0.1.1.tar.gz",
+    "common-makefiles": "0.2.0",
     "mocha": "1.13.0",
     "jshint": "2.1.11",
     "jsdox": "0.2.2",
